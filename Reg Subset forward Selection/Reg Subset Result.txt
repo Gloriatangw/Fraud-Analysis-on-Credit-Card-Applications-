@@ -1,0 +1,339 @@
+
+> coef(leaps_lm.App_Exprt_exhst,21)
+              (Intercept)              same_zip_5.x              same_ssn_5.x          same_nameDOB_5.x 
+             1.711266e-01              1.556894e-02              5.450076e-02              1.529943e-01 
+  same_ssn_diff_phone_3.x              same_ssn_3.x   same_ssn_diff_phone_5.x same_ssn_diff_address_5.x 
+            -9.306566e-03              6.532912e-03             -1.805007e-03              1.436211e-03 
+  same_ssn_diff_phone_7.x same_zip_diff_address_1.x              same_zip_1.x     same_zip_diff_ssn_1.x 
+             1.737743e-02              3.620054e-01              2.949058e-01             -5.692951e-01 
+  same_phone_diff_zip_3.x     same_ssn_diff_zip_7.x   same_phone_diff_ssn_3.x same_ssn_diff_address_7.x 
+            -2.520353e-03             -6.126874e-04              2.335873e-03             -1.185381e-02 
+  same_phone_diff_dob_7.x   same_phone_diff_zip_5.x    same_ssn_diff_zip_30.x   same_phone_diff_dob_1.x 
+             1.974071e-04             -7.213384e-05              0.000000e+00              0.000000e+00 
+   same_ssn_diff_dob_14.x    same_ssn_diff_zip_14.x 
+             1.130952e-02             -7.268522e-03 
+             
+same_zip_1.x             
+same_zip_5.x
+same_ssn_5.x
+same_ssn_3.x
+same_nameDOB_5.x
+same_ssn_diff_phone_3.x
+same_ssn_diff_phone_5.x
+same_ssn_diff_phone_7.x
+same_ssn_diff_address_5.x
+same_ssn_diff_address_7.x
+same_ssn_diff_dob_14.x
+same_ssn_diff_zip_30.x
+same_ssn_diff_zip_14.x
+same_ssn_diff_zip_7.x
+same_zip_diff_address_1.x
+same_zip_diff_ssn_1.x
+same_phone_diff_zip_3.x
+same_phone_diff_zip_5.x
+same_phone_diff_dob_7.x
+same_phone_diff_dob_1.x
+same_phone_diff_ssn_3.x
+
+
+
+
+
+> summary(leaps_lm.App_Exprt_exhst)
+Subset selection object
+Call: regsubsets.formula(fraud ~ ., data = Train_App_Exprt_DF, nbest = 1, 
+    nvmax = 25, really.big = T)
+40 Variables  (and intercept)
+                              Forced in Forced out
+same_zip_5.x                      FALSE      FALSE
+same_ssn_5.x                      FALSE      FALSE
+same_nameDOB_5.x                  FALSE      FALSE
+same_ssn_diff_phone_3.x           FALSE      FALSE
+same_phone_diff_ssn_1.x           FALSE      FALSE
+same_ssn_diff_zip_3.x             FALSE      FALSE
+same_ssn_diff_address_3.x         FALSE      FALSE
+same_ssn_diff_dob_3.x             FALSE      FALSE
+same_ssn_3.x                      FALSE      FALSE
+same_ssn_diff_dob_5.x             FALSE      FALSE
+same_phone_diff_dob_3.x           FALSE      FALSE
+same_ssn_diff_phone_5.x           FALSE      FALSE
+same_ssn_diff_dob_7.x             FALSE      FALSE
+same_ssn_diff_address_5.x         FALSE      FALSE
+same_ssn_diff_zip_5.x             FALSE      FALSE
+same_ssn_diff_phone_7.x           FALSE      FALSE
+same_zip_diff_address_1.x         FALSE      FALSE
+same_zip_1.x                      FALSE      FALSE
+same_zip_diff_ssn_1.x             FALSE      FALSE
+same_phone_diff_zip_3.x           FALSE      FALSE
+same_ssn_diff_zip_7.x             FALSE      FALSE
+same_phone_diff_ssn_3.x           FALSE      FALSE
+same_ssn_diff_dob_30.x            FALSE      FALSE
+same_ssn_7.x                      FALSE      FALSE
+same_ssn_diff_address_7.x         FALSE      FALSE
+same_ssn_1.x                      FALSE      FALSE
+same_phone_diff_dob_7.x           FALSE      FALSE
+same_phone_3.x                    FALSE      FALSE
+same_phone_diff_address_3.x       FALSE      FALSE
+same_ssn_diff_phone_30.x          FALSE      FALSE
+same_phone_diff_zip_5.x           FALSE      FALSE
+same_ssn_diff_zip_30.x            FALSE      FALSE
+same_phone_diff_ssn_5.x           FALSE      FALSE
+same_nameDOB_diff_address_7.x     FALSE      FALSE
+same_phone_diff_phone_1.x         FALSE      FALSE
+same_phone_diff_dob_1.x           FALSE      FALSE
+same_phone_diff_dob_1.x.x         FALSE      FALSE
+same_ssn_diff_dob_14.x            FALSE      FALSE
+same_ssn_diff_phone_14.x          FALSE      FALSE
+same_ssn_diff_zip_14.x            FALSE      FALSE
+1 subsets of each size up to 26
+Selection Algorithm: exhaustive
+          same_zip_5.x same_ssn_5.x same_nameDOB_5.x same_ssn_diff_phone_3.x same_phone_diff_ssn_1.x
+1  ( 1 )  " "          " "          "*"              " "                     " "                    
+2  ( 1 )  " "          " "          "*"              " "                     " "                    
+3  ( 1 )  " "          " "          "*"              " "                     " "                    
+4  ( 1 )  " "          "*"          "*"              " "                     " "                    
+5  ( 1 )  " "          "*"          "*"              " "                     " "                    
+6  ( 1 )  " "          "*"          "*"              " "                     " "                    
+7  ( 1 )  " "          "*"          "*"              "*"                     " "                    
+8  ( 1 )  "*"          "*"          "*"              "*"                     " "                    
+9  ( 1 )  "*"          "*"          "*"              " "                     " "                    
+10  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+11  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+12  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+13  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+14  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+15  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+16  ( 1 ) "*"          "*"          " "              " "                     " "                    
+17  ( 1 ) "*"          "*"          " "              " "                     " "                    
+18  ( 1 ) "*"          "*"          " "              " "                     " "                    
+19  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+20  ( 1 ) "*"          "*"          "*"              " "                     "*"                    
+21  ( 1 ) "*"          "*"          "*"              "*"                     "*"                    
+22  ( 1 ) "*"          "*"          "*"              "*"                     "*"                    
+23  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+24  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+25  ( 1 ) "*"          "*"          "*"              " "                     " "                    
+          same_ssn_diff_zip_3.x same_ssn_diff_address_3.x same_ssn_diff_dob_3.x same_ssn_3.x same_ssn_diff_dob_5.x
+1  ( 1 )  " "                   " "                       " "                   " "          " "                  
+2  ( 1 )  " "                   " "                       " "                   " "          " "                  
+3  ( 1 )  " "                   " "                       " "                   " "          " "                  
+4  ( 1 )  " "                   " "                       " "                   " "          " "                  
+5  ( 1 )  " "                   " "                       " "                   " "          " "                  
+6  ( 1 )  " "                   " "                       " "                   " "          " "                  
+7  ( 1 )  " "                   " "                       " "                   " "          " "                  
+8  ( 1 )  " "                   " "                       " "                   " "          " "                  
+9  ( 1 )  " "                   " "                       " "                   " "          " "                  
+10  ( 1 ) " "                   " "                       " "                   " "          " "                  
+11  ( 1 ) " "                   " "                       " "                   " "          " "                  
+12  ( 1 ) " "                   " "                       " "                   " "          " "                  
+13  ( 1 ) " "                   " "                       " "                   " "          " "                  
+14  ( 1 ) " "                   " "                       " "                   " "          " "                  
+15  ( 1 ) " "                   " "                       "*"                   " "          " "                  
+16  ( 1 ) " "                   " "                       "*"                   " "          " "                  
+17  ( 1 ) " "                   " "                       "*"                   " "          " "                  
+18  ( 1 ) " "                   " "                       "*"                   " "          " "                  
+19  ( 1 ) " "                   " "                       "*"                   " "          " "                  
+20  ( 1 ) " "                   " "                       " "                   "*"          " "                  
+21  ( 1 ) "*"                   "*"                       " "                   " "          " "                  
+22  ( 1 ) "*"                   "*"                       " "                   " "          " "                  
+23  ( 1 ) "*"                   "*"                       " "                   " "          " "                  
+24  ( 1 ) "*"                   "*"                       " "                   " "          " "                  
+25  ( 1 ) "*"                   "*"                       " "                   " "          " "                  
+          same_phone_diff_dob_3.x same_ssn_diff_phone_5.x same_ssn_diff_dob_7.x same_ssn_diff_address_5.x
+1  ( 1 )  " "                     " "                     " "                   " "                      
+2  ( 1 )  "*"                     " "                     " "                   " "                      
+3  ( 1 )  "*"                     " "                     " "                   " "                      
+4  ( 1 )  "*"                     " "                     " "                   " "                      
+5  ( 1 )  " "                     " "                     " "                   " "                      
+6  ( 1 )  " "                     " "                     " "                   " "                      
+7  ( 1 )  " "                     " "                     " "                   " "                      
+8  ( 1 )  " "                     " "                     " "                   " "                      
+9  ( 1 )  " "                     " "                     " "                   " "                      
+10  ( 1 ) " "                     " "                     " "                   " "                      
+11  ( 1 ) " "                     " "                     " "                   " "                      
+12  ( 1 ) " "                     " "                     " "                   " "                      
+13  ( 1 ) " "                     " "                     "*"                   " "                      
+14  ( 1 ) " "                     " "                     " "                   "*"                      
+15  ( 1 ) " "                     " "                     " "                   " "                      
+16  ( 1 ) "*"                     " "                     " "                   "*"                      
+17  ( 1 ) "*"                     " "                     " "                   "*"                      
+18  ( 1 ) "*"                     " "                     " "                   "*"                      
+19  ( 1 ) " "                     " "                     "*"                   "*"                      
+20  ( 1 ) " "                     " "                     " "                   "*"                      
+21  ( 1 ) " "                     " "                     " "                   "*"                      
+22  ( 1 ) " "                     "*"                     " "                   "*"                      
+23  ( 1 ) "*"                     " "                     " "                   " "                      
+24  ( 1 ) "*"                     " "                     " "                   " "                      
+25  ( 1 ) "*"                     "*"                     " "                   " "                      
+          same_ssn_diff_zip_5.x same_ssn_diff_phone_7.x same_zip_diff_address_1.x same_zip_1.x same_zip_diff_ssn_1.x
+1  ( 1 )  " "                   " "                     " "                       " "          " "                  
+2  ( 1 )  " "                   " "                     " "                       " "          " "                  
+3  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+4  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+5  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+6  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+7  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+8  ( 1 )  " "                   " "                     " "                       "*"          " "                  
+9  ( 1 )  " "                   " "                     " "                       " "          "*"                  
+10  ( 1 ) " "                   " "                     " "                       " "          "*"                  
+11  ( 1 ) " "                   " "                     " "                       " "          "*"                  
+12  ( 1 ) " "                   " "                     " "                       " "          "*"                  
+13  ( 1 ) " "                   " "                     " "                       " "          "*"                  
+14  ( 1 ) " "                   " "                     " "                       " "          "*"                  
+15  ( 1 ) " "                   "*"                     " "                       " "          "*"                  
+16  ( 1 ) " "                   " "                     " "                       "*"          " "                  
+17  ( 1 ) " "                   " "                     " "                       "*"          " "                  
+18  ( 1 ) " "                   " "                     " "                       "*"          " "                  
+19  ( 1 ) " "                   " "                     " "                       "*"          "*"                  
+20  ( 1 ) " "                   " "                     "*"                       "*"          "*"                  
+21  ( 1 ) " "                   " "                     "*"                       "*"          "*"                  
+22  ( 1 ) " "                   " "                     "*"                       "*"          "*"                  
+23  ( 1 ) "*"                   " "                     "*"                       " "          " "                  
+24  ( 1 ) "*"                   " "                     "*"                       "*"          " "                  
+25  ( 1 ) "*"                   " "                     "*"                       "*"          " "                  
+          same_phone_diff_phone_1.x same_phone_diff_dob_1.x same_phone_diff_zip_3.x same_phone_diff_dob_1.x.x
+1  ( 1 )  " "                       " "                     " "                     " "                      
+2  ( 1 )  " "                       " "                     " "                     " "                      
+3  ( 1 )  " "                       " "                     " "                     " "                      
+4  ( 1 )  " "                       " "                     " "                     " "                      
+5  ( 1 )  " "                       " "                     "*"                     " "                      
+6  ( 1 )  " "                       " "                     " "                     " "                      
+7  ( 1 )  " "                       " "                     " "                     " "                      
+8  ( 1 )  " "                       " "                     " "                     " "                      
+9  ( 1 )  " "                       "*"                     " "                     " "                      
+10  ( 1 ) " "                       "*"                     " "                     " "                      
+11  ( 1 ) " "                       "*"                     " "                     " "                      
+12  ( 1 ) " "                       "*"                     " "                     " "                      
+13  ( 1 ) " "                       "*"                     " "                     " "                      
+14  ( 1 ) " "                       "*"                     " "                     " "                      
+15  ( 1 ) " "                       "*"                     " "                     " "                      
+16  ( 1 ) " "                       " "                     "*"                     " "                      
+17  ( 1 ) " "                       " "                     "*"                     " "                      
+18  ( 1 ) " "                       " "                     "*"                     " "                      
+19  ( 1 ) " "                       "*"                     " "                     " "                      
+20  ( 1 ) " "                       " "                     "*"                     " "                      
+21  ( 1 ) "*"                       " "                     " "                     " "                      
+22  ( 1 ) "*"                       " "                     " "                     " "                      
+23  ( 1 ) " "                       " "                     "*"                     "*"                      
+24  ( 1 ) " "                       " "                     "*"                     "*"                      
+25  ( 1 ) " "                       " "                     "*"                     "*"                      
+          same_ssn_diff_zip_7.x same_phone_diff_ssn_3.x same_ssn_diff_dob_30.x same_ssn_diff_dob_14.x same_ssn_7.x
+1  ( 1 )  " "                   " "                     " "                    " "                    " "         
+2  ( 1 )  " "                   " "                     " "                    " "                    " "         
+3  ( 1 )  " "                   " "                     " "                    " "                    " "         
+4  ( 1 )  " "                   " "                     " "                    " "                    " "         
+5  ( 1 )  " "                   " "                     " "                    " "                    " "         
+6  ( 1 )  " "                   "*"                     " "                    " "                    " "         
+7  ( 1 )  " "                   "*"                     " "                    " "                    " "         
+8  ( 1 )  " "                   "*"                     " "                    " "                    " "         
+9  ( 1 )  " "                   "*"                     " "                    " "                    " "         
+10  ( 1 ) " "                   "*"                     "*"                    " "                    " "         
+11  ( 1 ) " "                   "*"                     "*"                    " "                    " "         
+12  ( 1 ) " "                   "*"                     "*"                    " "                    " "         
+13  ( 1 ) "*"                   "*"                     " "                    " "                    " "         
+14  ( 1 ) " "                   "*"                     "*"                    " "                    " "         
+15  ( 1 ) " "                   "*"                     " "                    "*"                    " "         
+16  ( 1 ) " "                   "*"                     "*"                    "*"                    " "         
+17  ( 1 ) " "                   "*"                     "*"                    "*"                    " "         
+18  ( 1 ) " "                   "*"                     "*"                    "*"                    " "         
+19  ( 1 ) "*"                   "*"                     " "                    "*"                    " "         
+20  ( 1 ) " "                   "*"                     "*"                    "*"                    " "         
+21  ( 1 ) " "                   "*"                     " "                    " "                    " "         
+22  ( 1 ) " "                   "*"                     " "                    " "                    " "         
+23  ( 1 ) " "                   "*"                     "*"                    "*"                    "*"         
+24  ( 1 ) " "                   "*"                     "*"                    "*"                    "*"         
+25  ( 1 ) " "                   "*"                     "*"                    "*"                    "*"         
+          same_ssn_diff_address_7.x same_ssn_1.x same_phone_diff_dob_7.x same_phone_3.x same_phone_diff_address_3.x
+1  ( 1 )  " "                       " "          " "                     " "            " "                        
+2  ( 1 )  " "                       " "          " "                     " "            " "                        
+3  ( 1 )  " "                       " "          " "                     " "            " "                        
+4  ( 1 )  " "                       " "          " "                     " "            " "                        
+5  ( 1 )  " "                       " "          "*"                     " "            " "                        
+6  ( 1 )  " "                       " "          "*"                     "*"            " "                        
+7  ( 1 )  " "                       " "          "*"                     "*"            " "                        
+8  ( 1 )  " "                       " "          "*"                     "*"            " "                        
+9  ( 1 )  " "                       " "          "*"                     "*"            " "                        
+10  ( 1 ) " "                       " "          "*"                     "*"            " "                        
+11  ( 1 ) " "                       " "          "*"                     "*"            "*"                        
+12  ( 1 ) " "                       " "          "*"                     "*"            "*"                        
+13  ( 1 ) " "                       " "          "*"                     "*"            "*"                        
+14  ( 1 ) " "                       " "          "*"                     "*"            "*"                        
+15  ( 1 ) "*"                       " "          "*"                     "*"            "*"                        
+16  ( 1 ) " "                       " "          "*"                     "*"            " "                        
+17  ( 1 ) " "                       " "          "*"                     "*"            "*"                        
+18  ( 1 ) " "                       "*"          "*"                     "*"            "*"                        
+19  ( 1 ) "*"                       " "          "*"                     "*"            "*"                        
+20  ( 1 ) " "                       "*"          "*"                     "*"            " "                        
+21  ( 1 ) " "                       "*"          "*"                     "*"            " "                        
+22  ( 1 ) " "                       "*"          "*"                     "*"            " "                        
+23  ( 1 ) " "                       "*"          "*"                     "*"            "*"                        
+24  ( 1 ) " "                       "*"          "*"                     "*"            "*"                        
+25  ( 1 ) " "                       "*"          "*"                     "*"            "*"                        
+          same_ssn_diff_phone_30.x same_ssn_diff_phone_14.x same_phone_diff_zip_5.x same_ssn_diff_zip_30.x
+1  ( 1 )  " "                      " "                      " "                     " "                   
+2  ( 1 )  " "                      " "                      " "                     " "                   
+3  ( 1 )  " "                      " "                      " "                     " "                   
+4  ( 1 )  " "                      " "                      " "                     " "                   
+5  ( 1 )  " "                      " "                      " "                     " "                   
+6  ( 1 )  " "                      " "                      " "                     " "                   
+7  ( 1 )  " "                      " "                      " "                     " "                   
+8  ( 1 )  " "                      " "                      " "                     " "                   
+9  ( 1 )  " "                      "*"                      " "                     " "                   
+10  ( 1 ) " "                      "*"                      " "                     " "                   
+11  ( 1 ) " "                      "*"                      " "                     " "                   
+12  ( 1 ) " "                      "*"                      " "                     " "                   
+13  ( 1 ) " "                      "*"                      " "                     " "                   
+14  ( 1 ) " "                      "*"                      " "                     "*"                   
+15  ( 1 ) " "                      "*"                      " "                     " "                   
+16  ( 1 ) " "                      " "                      "*"                     " "                   
+17  ( 1 ) " "                      " "                      "*"                     " "                   
+18  ( 1 ) " "                      " "                      "*"                     "*"                   
+19  ( 1 ) " "                      "*"                      " "                     " "                   
+20  ( 1 ) " "                      "*"                      " "                     "*"                   
+21  ( 1 ) " "                      "*"                      " "                     "*"                   
+22  ( 1 ) " "                      "*"                      " "                     "*"                   
+23  ( 1 ) " "                      " "                      "*"                     "*"                   
+24  ( 1 ) " "                      " "                      "*"                     "*"                   
+25  ( 1 ) " "                      " "                      "*"                     "*"                   
+          same_ssn_diff_zip_14.x same_phone_diff_ssn_5.x same_nameDOB_diff_address_7.x
+1  ( 1 )  " "                    " "                     " "                          
+2  ( 1 )  " "                    " "                     " "                          
+3  ( 1 )  " "                    " "                     " "                          
+4  ( 1 )  " "                    " "                     " "                          
+5  ( 1 )  " "                    " "                     " "                          
+6  ( 1 )  " "                    " "                     " "                          
+7  ( 1 )  " "                    " "                     " "                          
+8  ( 1 )  " "                    " "                     " "                          
+9  ( 1 )  " "                    " "                     " "                          
+10  ( 1 ) " "                    " "                     " "                          
+11  ( 1 ) " "                    " "                     " "                          
+12  ( 1 ) " "                    " "                     "*"                          
+13  ( 1 ) " "                    " "                     "*"                          
+14  ( 1 ) " "                    " "                     "*"                          
+15  ( 1 ) " "                    " "                     "*"                          
+16  ( 1 ) "*"                    "*"                     "*"                          
+17  ( 1 ) "*"                    "*"                     "*"                          
+18  ( 1 ) " "                    "*"                     "*"                          
+19  ( 1 ) "*"                    " "                     "*"                          
+20  ( 1 ) "*"                    "*"                     " "                          
+21  ( 1 ) "*"                    "*"                     "*"                          
+22  ( 1 ) "*"                    "*"                     "*"                          
+23  ( 1 ) "*"                    "*"                     "*"                          
+24  ( 1 ) "*"                    "*"                     "*"                          
+25  ( 1 ) "*"                    "*"                     "*"  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
